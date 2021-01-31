@@ -4,21 +4,21 @@ const manifestUri = [
   {
     name: "Star Trek",
     desc: "Star trek in spanish",
-    img: "//shaka-player-demo.appspot.com/assets/poster.jpg",
+    img: "Star.jpg",
     videoUrl:
       "https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd",
   },
   {
     name: "Big Buck",
     desc: "A documentary on Big buck",
-    img: "//shaka-player-demo.appspot.com/assets/poster.jpg",
+    img: "Big.png",
     videoUrl:
       "https://storage.googleapis.com/shaka-demo-assets/bbb-dark-truths-hls/hls.m3u8",
   },
   {
     name: "Angel One",
     desc: "Star trek demo version (Espanol)",
-    img: "//shaka-player-demo.appspot.com/assets/poster.jpg",
+    img: "Angle one.jpg",
     videoUrl:
       "https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd",
   },
