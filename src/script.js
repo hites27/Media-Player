@@ -1,3 +1,5 @@
+import shaka from "shaka-player";
+
 const videoDiv = document.getElementById("videosDiv");
 
 const manifestUri = [

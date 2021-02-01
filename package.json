@@ -2,12 +2,12 @@
   "name": "media-player",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prod": "parcel build src/index.html"
   },
-  "author": "",
+  "author": "Hites",
   "license": "ISC",
   "dependencies": {
     "shaka-player": "^3.0.7"
