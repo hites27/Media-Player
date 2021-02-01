@@ -2,7 +2,7 @@
   "name": "media-player",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "src/script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prod": "parcel build src/index.html"
@@ -13,6 +13,7 @@
     "shaka-player": "^3.0.7"
   },
   "devDependencies": {
+    "cssnano": "^4.1.10",
     "parcel-bundler": "^1.12.4"
   }
 }
