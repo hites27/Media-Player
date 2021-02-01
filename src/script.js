@@ -1,26 +1,24 @@
-import shaka from "shaka-player";
-
 const videoDiv = document.getElementById("videosDiv");
 
 const manifestUri = [
   {
     name: "Star Trek",
     desc: "Star trek in spanish",
-    img: "src/assets/Star.jpg",
+    img: "./assets/Star.jpg",
     videoUrl:
       "https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd",
   },
   {
     name: "Big Buck",
     desc: "A documentary on Big buck",
-    img: "src/assets/Big.png",
+    img: "./assets/Big.png",
     videoUrl:
       "https://storage.googleapis.com/shaka-demo-assets/bbb-dark-truths-hls/hls.m3u8",
   },
   {
     name: "Angel One",
     desc: "Star trek demo version (Espanol)",
-    img: "src/assets/Angle one.jpg",
+    img: "./assets/Angle one.jpg",
     videoUrl:
       "https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd",
   },
