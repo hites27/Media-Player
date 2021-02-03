@@ -2,24 +2,21 @@
   "name": "media-player",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "dev-server": "webpack-dev-server"
+    "build": "webpack --mode=production",
+    "dev-server": "webpack serve --mode=development"
   },
   "author": "Hites",
   "license": "ISC",
   "dependencies": {
-    "@babel/polyfill": "^7.12.1",
-    "babel": "^6.23.0",
-    "babel-loader": "0.0.1-security",
     "shaka-player": "^3.0.7"
   },
   "devDependencies": {
-    "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
-    "babel-loader": "^8.2.2",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
     "css-loader": "^5.0.1",
     "cssnano": "^4.1.10",
     "file-loader": "^6.2.0",

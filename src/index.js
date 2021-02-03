@@ -1,10 +1,13 @@
+import shaka from "shaka-player";
+import "./style.css";
+
 const videoDiv = document.getElementById("videosDiv");
 
 const manifestUri = [
   {
     name: "Star Trek",
     desc: "Star trek in spanish",
-    img: "./assets/Star.jpg",
+    img: "./src/assets/Star.jpg",
     videoUrl:
       "https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd",
   },
@@ -18,7 +21,7 @@ const manifestUri = [
   {
     name: "Angel One",
     desc: "Star trek demo version (Espanol)",
-    img: "./assets/Angle one.jpg",
+    img: "./src/assets/Angle one.jpg",
     videoUrl:
       "https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd",
   },
@@ -27,11 +30,13 @@ const manifestUri = [
 const renderCards = (videoPara) => {
   const videoCard = `
     <div class="card" style="width: 100%; border-radius: 15px; padding: 10px">
-      <img class="card-img-top" src="${videoPara?.img}" alt="Card image cap">
+      <img class="card-img-top" src="${videoPara.img}" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">${videoPara?.name}</h5>
-          <p class="card-text">${videoPara?.desc}</p>
-          <button onclick="startPlaying('${videoPara?.videoUrl}')" class="btn btn-primary">Play</button>
+          <h5 class="card-title">${videoPara.name}</h5>
+          <p class="card-text">${videoPara.desc}</p>
+          <button onclick="${startPlaying(
+            videoPara.videoUrl
+          )}" class="btn btn-primary">Play</button>
         </div>
     </div>
 `;
@@ -62,6 +67,7 @@ function initApp() {
 
 async function initPlayer(videoUrl) {
   // Create a Player instance.
+
   const video = document.getElementById("video");
   const player = new shaka.Player(video);
 
